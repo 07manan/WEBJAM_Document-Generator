@@ -8,7 +8,7 @@ A fast easy and effective web app for completing practicals.Choose a template. G
 ## Authors
 
 - [@07manan](https://www.github.com/07manan)
-- [@Jimpate247](https://www.github.com/Jimpate247)
+- [@Jimpatel247](https://www.github.com/Jimpatel247)
 - [@amish1211](https://www.github.com/amish1211)
 
 
