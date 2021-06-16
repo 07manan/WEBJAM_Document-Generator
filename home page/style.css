@@ -1,4 +1,25 @@
 .navbar-dark .navbar-brand {
     color: #2a9c52;
     font-weight: bold;
+    font-size:2vw;
+    font-family: cursive;
+}
+.sample{
+    font-size:3vw;
+    font-family: bold;
+    text-align: center;
+    color:#2a9c52;
+    
+}
+#backgnd{
+    height: 100%;
+}
+#backgnd{
+    
+    background: url(bgfullfinal.png) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    background-size: cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+
 }
