@@ -23,3 +23,22 @@
     -moz-background-size:cover;
 
 }
+.contributor{
+    font-size:3vw;
+    font-family: bold;
+    text-align: center;
+    color:#030202;
+}
+.education{
+    font-size:2vw;
+    font-family: bold;
+    text-align: center;
+    color:#030202;
+}
+.img-fluid{
+    width:100%;
+    height: auto;
+}
+footer {
+    background: none repeat scroll 0 0 #3d8f51;
+}
