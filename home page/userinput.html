@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        #btn2 {
+            background-color: #2a9c52;
+        }
+
+        #document-template {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>FILEJAM</title>
+</head>
+
+<body background="background 2.jpg">
+    
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand font-weight:bold color:green" href="#">
+                <image src="logofinal6e.jpg" alt="" width="50">
+                FILEJAM
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="indexme.html" role="button" style="margin-left:1vw;
+    margin-right:1vw;
+    font-weight: bold;
+    font-size:1.5vw;
+    font-family: cursive;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-danger" href="#" role="button" style="margin-left:1vw;
+    margin-right:1vw;
+    font-weight: bold;
+    font-size:1.5vw;
+    font-family: cursive;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success" href="#" role="button" style="margin-left:1vw;
+    margin-right:1vw;
+    font-weight: bold;
+    font-size:1.5vw;
+    font-family: cursive;">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+   
+        <div class="wrapper" id="input">
+
+            <div class="title">
+                Fast , Easy & Effective
+            </div>
+
+            <div class="form">
+                <div class="input_field">
+                    <label><h5>Name</h5></label>
+                    <input  id ="name" type="text" class="input" placeholder="Enter here">
+                </div>
+                <div class="input_field">
+                    <label><h5>Branch</h5></label>
+                    <input type="text" class="input" placeholder="Enter here" id = "branch">
+                </div>
+                <div class="input_field">
+                    <label><h5>Practical No.</h5></label>
+                    <input type="number" class="input" id ="practical" placeholder="Enter here">
+                </div>
+                <div class="input_field">
+                    <label><h5>Date</h5></label>
+                    <input type="date" class="input" id = "date">
+                </div>
+                <div class="input_field">
+                    <label><h5>Aim</h5></label>
+                    <input type="text" class="input" id = "aim" placeholder="Enter here">
+                </div>
+                <div class="input_field">
+                    <label> <h5>Apparatus</h5></label>
+                    <textarea  id="apparatus" class="textarea" placeholder="Enter here"></textarea>
+                </div>
+                <div class="input_field">
+                    <label><h5>Theory</h5></label>
+                    <textarea  class="textarea" id ="theory" placeholder="Enter here"></textarea>
+                </div>
+                <div class="form-group mt-2">
+                    <input id="img" type="file" class="form-controll" />
+                    <img class="mt-3" id="preview" src="" alt="" width="350px">
+                </div>
+                <div class="button input_field" style="margin-top:10px;">
+                    <a onclick="generatepdf()" id="btn2" class="btn btn-primary batn"><b>Generate PDF</b> </a>
+                </div>
+            </div>
+        </div>
+       
+
+        <!-- <div class="button">
+            <a onclick="generatepdf()" id="btn2" class="btn btn-primary"><b>Generate PDF</b> </a>
+        </div> -->
+
+        
+
+        <!-- <input type=submit name =submit value =print onclick =print()> -->
+    
+
+    <div class="card py-5" id="document-template">
+
+        <!-- <div class="card body "> -->
+
+
+            <!-- Name area -->
+
+            <div>
+                <p id="nameT">Name: </p>
+            </div>
+
+            <div>
+                <p id="branchT">Branch: </p>
+            </div>
+
+            <div>
+                <p id="dateT">Date: </p>
+            </div>
+
+            <div style="text-align: center;">
+                <h1  id="practicalT" >Practical </h1>
+            </div>
+
+            <!-- Aim area -->
+
+            <div >
+                <p style="color: blue;">Aim:</p>
+                <p id="aimT" ></p>
+            </div>
+
+
+            <!-- instruments area -->
+            <div>
+                <p style="color:blue">Apparatus:</p>
+                
+                <p id="apparatusT"></p>
+            </div>
+
+            <!-- theory area -->
+
+            <div>
+                <p style="color: blue;">Theory:</p>
+                <p id='theoryT'></p>
+            </div>
+            <div>
+                <p style="color:blue">Observation:</p>
+            </div>
+            <div>
+                <img id="imgT" class="img" src="" alt="" width="90%">
+            </div>
+            
+
+        <!-- </div> -->
+
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="script.js">
+            
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
