@@ -16,7 +16,7 @@
 }
 #backgnd{
     
-    background: url(bgfullfinal.png) no-repeat center center fixed;
+    background: url(bgfullfinal\ -\ Copy.png) no-repeat center center fixed;
     -webkit-background-size:cover;
     background-size: cover;
     -o-background-size:cover;
@@ -42,3 +42,107 @@
 footer {
     background: none repeat scroll 0 0 #3d8f51;
 }
+#btn1{
+    background-color: #3d8f51;
+}
+
+/*body{
+    
+    padding:0 10px;
+}*/
+.wrapper{
+    max-width: 500px;
+    width:100%;
+    background: #ffffff;
+    margin: 80px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+   
+    
+}
+
+.wrapper .title{
+    font-size:24px;
+    font-weight: 700;   
+    margin-bottom: 25px;
+    color:#fec107;
+    text-transform: uppercase;
+    text-align: center;  
+}
+
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .input_field{
+    margin-bottom:15px;
+    display:flex;
+    align-items: center;
+}
+
+.wrapper .form .input_field label{
+    width:200px;
+    color: #757575;
+    margin-right:10px;
+    font-size:14px;
+}
+
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea{
+    width:100%;
+    outline:none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .input_field .textarea{
+    resize: none;
+}
+
+#apparatus{
+    height:50px;
+}
+
+#theory{
+    height:200px;
+}
+
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field .textarea:focus{
+    border:1px solid #fec107;
+}
+
+
+.batn{
+    width:100%;
+    padding:8px 10px;
+    border:0;
+    color:#ffffff;
+    cursor:pointer;
+    border:radius 3px;
+    outline:none;
+}
+
+.wrapper .form .input_field:last-child{
+    margin-bottom: 0;
+}
+
+.wrapper .form .input_field .batn:hover{
+    background: #ffd658;
+}
+
+@media(max-width:420px){
+    .wrapper .form .input_field{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .input_field label{
+        margin-bottom: 5px;
+
+    }
+}
+
+
